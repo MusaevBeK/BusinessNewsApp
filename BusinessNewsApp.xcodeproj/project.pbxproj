@@ -10,7 +10,7 @@
 		512291ED66542B64066FCE97 /* Pods_SomeAppForGitHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F373FFC87D38CBAAFB502324 /* Pods_SomeAppForGitHub.framework */; };
 		CE51B5A528303C9F00EFE372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51B5A428303C9F00EFE372 /* AppDelegate.swift */; };
 		CE51B5A728303C9F00EFE372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51B5A628303C9F00EFE372 /* SceneDelegate.swift */; };
-		CE51B5A928303C9F00EFE372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51B5A828303C9F00EFE372 /* ViewController.swift */; };
+		CE51B5A928303C9F00EFE372 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51B5A828303C9F00EFE372 /* NewsViewController.swift */; };
 		CE51B5AC28303C9F00EFE372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE51B5AA28303C9F00EFE372 /* Main.storyboard */; };
 		CE51B5AE28303CA100EFE372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE51B5AD28303CA100EFE372 /* Assets.xcassets */; };
 		CE51B5B128303CA100EFE372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE51B5AF28303CA100EFE372 /* LaunchScreen.storyboard */; };
@@ -25,10 +25,10 @@
 /* Begin PBXFileReference section */
 		101D4FD3D86A9243884E9F1B /* Pods-SomeAppForGitHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomeAppForGitHub.release.xcconfig"; path = "Target Support Files/Pods-SomeAppForGitHub/Pods-SomeAppForGitHub.release.xcconfig"; sourceTree = "<group>"; };
 		7FED27A572CE6AC076BDDCAA /* Pods-SomeAppForGitHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomeAppForGitHub.debug.xcconfig"; path = "Target Support Files/Pods-SomeAppForGitHub/Pods-SomeAppForGitHub.debug.xcconfig"; sourceTree = "<group>"; };
-		CE51B5A128303C9F00EFE372 /* SomeAppForGitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeAppForGitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE51B5A128303C9F00EFE372 /* BusinessNewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessNewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE51B5A428303C9F00EFE372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE51B5A628303C9F00EFE372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE51B5A828303C9F00EFE372 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE51B5A828303C9F00EFE372 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		CE51B5AB28303C9F00EFE372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE51B5AD28303CA100EFE372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE51B5B028303CA100EFE372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		CE51B59828303C9F00EFE372 = {
 			isa = PBXGroup;
 			children = (
-				CE51B5A328303C9F00EFE372 /* SomeAppForGitHub */,
+				CE51B5A328303C9F00EFE372 /* BusinessNewsApp */,
 				CE51B5A228303C9F00EFE372 /* Products */,
 				0619A667BA6EA77466F15050 /* Pods */,
 				2232A8276E6E3784515A2DEC /* Frameworks */,
@@ -84,12 +84,12 @@
 		CE51B5A228303C9F00EFE372 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE51B5A128303C9F00EFE372 /* SomeAppForGitHub.app */,
+				CE51B5A128303C9F00EFE372 /* BusinessNewsApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE51B5A328303C9F00EFE372 /* SomeAppForGitHub */ = {
+		CE51B5A328303C9F00EFE372 /* BusinessNewsApp */ = {
 			isa = PBXGroup;
 			children = (
 				CE51B5BC28303E4B00EFE372 /* Models */,
@@ -99,7 +99,7 @@
 				CE51B5BA28303E3200EFE372 /* Resourses */,
 				CE51B5B228303CA100EFE372 /* Info.plist */,
 			);
-			path = SomeAppForGitHub;
+			path = BusinessNewsApp;
 			sourceTree = "<group>";
 		};
 		CE51B5B828303E0F00EFE372 /* View */ = {
@@ -133,7 +133,7 @@
 		CE51B5BB28303E3D00EFE372 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CE51B5A828303C9F00EFE372 /* ViewController.swift */,
+				CE51B5A828303C9F00EFE372 /* NewsViewController.swift */,
 				CE51B5CC2832308600EFE372 /* InformationPageViewController.swift */,
 			);
 			path = Controllers;
@@ -168,9 +168,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE51B5A028303C9F00EFE372 /* SomeAppForGitHub */ = {
+		CE51B5A028303C9F00EFE372 /* BusinessNewsApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE51B5B528303CA100EFE372 /* Build configuration list for PBXNativeTarget "SomeAppForGitHub" */;
+			buildConfigurationList = CE51B5B528303CA100EFE372 /* Build configuration list for PBXNativeTarget "BusinessNewsApp" */;
 			buildPhases = (
 				3A55FB0325A08CD32F063BF5 /* [CP] Check Pods Manifest.lock */,
 				CE51B59D28303C9F00EFE372 /* Sources */,
@@ -182,9 +182,9 @@
 			);
 			dependencies = (
 			);
-			name = SomeAppForGitHub;
+			name = BusinessNewsApp;
 			productName = SomeAppForGitHub;
-			productReference = CE51B5A128303C9F00EFE372 /* SomeAppForGitHub.app */;
+			productReference = CE51B5A128303C9F00EFE372 /* BusinessNewsApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -202,7 +202,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE51B59C28303C9F00EFE372 /* Build configuration list for PBXProject "SomeAppForGitHub" */;
+			buildConfigurationList = CE51B59C28303C9F00EFE372 /* Build configuration list for PBXProject "BusinessNewsApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,7 +215,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE51B5A028303C9F00EFE372 /* SomeAppForGitHub */,
+				CE51B5A028303C9F00EFE372 /* BusinessNewsApp */,
 			);
 		};
 /* End PBXProject section */
@@ -283,7 +283,7 @@
 			files = (
 				CE51B5CD2832308600EFE372 /* InformationPageViewController.swift in Sources */,
 				CE51B5C3283052F900EFE372 /* NewsModel.swift in Sources */,
-				CE51B5A928303C9F00EFE372 /* ViewController.swift in Sources */,
+				CE51B5A928303C9F00EFE372 /* NewsViewController.swift in Sources */,
 				CE51B5BF2830502900EFE372 /* Request.swift in Sources */,
 				CE51B5A528303C9F00EFE372 /* AppDelegate.swift in Sources */,
 				CE51B5A728303C9F00EFE372 /* SceneDelegate.swift in Sources */,
@@ -440,7 +440,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3KW5FCA2FN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SomeAppForGitHub/Info.plist;
+				INFOPLIST_FILE = BusinessNewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -451,7 +451,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.portfolio.beksultan.SomeAppForGitHub;
+				PRODUCT_BUNDLE_IDENTIFIER = io.portfolio.beksultan.BusinessNewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -469,7 +469,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3KW5FCA2FN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SomeAppForGitHub/Info.plist;
+				INFOPLIST_FILE = BusinessNewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -480,7 +480,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.portfolio.beksultan.SomeAppForGitHub;
+				PRODUCT_BUNDLE_IDENTIFIER = io.portfolio.beksultan.BusinessNewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -491,7 +491,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE51B59C28303C9F00EFE372 /* Build configuration list for PBXProject "SomeAppForGitHub" */ = {
+		CE51B59C28303C9F00EFE372 /* Build configuration list for PBXProject "BusinessNewsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE51B5B328303CA100EFE372 /* Debug */,
@@ -500,7 +500,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE51B5B528303CA100EFE372 /* Build configuration list for PBXNativeTarget "SomeAppForGitHub" */ = {
+		CE51B5B528303CA100EFE372 /* Build configuration list for PBXNativeTarget "BusinessNewsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE51B5B628303CA100EFE372 /* Debug */,

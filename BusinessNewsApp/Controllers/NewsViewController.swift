@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 import CoreAudio
 
-class ViewController: UIViewController {
+class NewsViewController: UIViewController {
     
     var network = ApiResponse()
     
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
 
 // MARK: - extension для DataSource && Delegate tableView
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
+extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         150
@@ -113,7 +113,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
 // MARK: - extension UISearchBarDelegate для searchController
 
-extension ViewController: UISearchBarDelegate {
+extension NewsViewController: UISearchBarDelegate {
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
